@@ -179,11 +179,10 @@ footer p {
 /*CSS de Contacto*/
 
 .contacto-page {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
-    grid-template-columns: 50% 50%;
-    column-gap: 15px;
     margin-bottom: 20px;
 }
 
@@ -209,7 +208,7 @@ footer p {
     flex-direction: column;
     gap: 10px;
     width: auto;
-    margin-right: 15px;
+    margin-top: 20px;
 }
 
 .form-contacto input {
@@ -250,6 +249,19 @@ footer p {
 .contacto-enviar {
     width: 80px;
     align-self: flex-end;
+}
+
+@media (min-width:800px) {
+    .contacto-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 15px;
+    }
+
+    .form-contacto {
+        margin-top: 0px;
+        margin-right: 15px;
+    }
 }
 
 /*CSS generales*/
