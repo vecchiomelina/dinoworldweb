@@ -69,15 +69,6 @@ nav {
     }
 }
 
-/* CSS de index/home*/
-
-.principal {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-
 /*CSS de Footer*/
 
 footer {
@@ -113,10 +104,19 @@ footer p {
     }
 }
 
+/* CSS de index/home*/
+
+.principal {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /*CSS de atracciones*/
 
 .atraccion {
     display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
@@ -126,22 +126,49 @@ footer p {
     display: inline-block;
     text-align: justify;
     align-self: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 .atracciones-img {
-    width: 40%;
+    width: 80%;
     height: auto;
-    padding-left: 10px;
+    align-self: center;
 }
+
 .atracciones-titulo {
     font-size: 30px;
     color: #E6B501;
-    
+    text-align: center;
 }
 
 .atracciones-p {
     font-size: 20px;
     color: #F2E7BB;
+}
+
+@media (min-width:800px) {
+    .atraccion {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .atracciones-img {
+        width: 40%;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .atraccion-texto {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .atracciones-titulo {
+        color: #E6B501;
+        text-align: left;
+    }
 }
 
 /*CSS de nosotros*/
