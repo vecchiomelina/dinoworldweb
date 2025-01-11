@@ -204,7 +204,7 @@ footer p {
 
 /*CSS de nosotros*/
 .nosotros-img {
-    width: 40%;
+    width: 80%;
     height: auto;
     align-self: center;
     display: block;
@@ -220,6 +220,12 @@ footer p {
     display: inline-block;
     text-align: justify;
     align-self: center;
+}
+
+@media (min-width:800px) {
+    .nosotros-img {
+        width: 40%;
+    }
 }
 
 
