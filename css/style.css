@@ -83,7 +83,13 @@ footer p {
     margin-right: auto;
     font-family: "Rubik Distressed", serif;
     font-style: normal;
-    font-size: 55px;
+    font-size: 18px;
+}
+
+@media (min-width:800px) {
+    footer p {
+        font-size: 55px;
+    }
 }
 
 /*CSS de atracciones*/
