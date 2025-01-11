@@ -139,13 +139,13 @@ footer p {
 
 
 /*CSS de recursos*/
+
 .video-recurso {
-    display: grid;
-    grid-template-columns: 500px auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 35px;
     padding-left: 15px;
     padding-right: 15px;
-    column-gap: 15px;
 }
 
 .recurso-vid {
@@ -154,11 +154,27 @@ footer p {
 }
 
 .recurso-p {
+    margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
     text-align: justify;
     align-self: center;
 }
+
+@media (min-width:800px) {
+    .video-recurso {
+        display: grid;
+        grid-template-columns: 500px auto;
+        column-gap: 15px;
+    }
+
+    .recurso-p {
+        margin-top: 0px;
+    }
+}
+
+
+
 
 /*CSS de Contacto*/
 
