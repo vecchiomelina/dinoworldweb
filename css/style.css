@@ -46,6 +46,37 @@ header {
 nav { 
     text-align: center;
     align-self: center;
+    
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-toggler {
+    background-color: #E6B501;
+}
+
+.nav-link {
+    color: #E6B501;
+    font-size: 35px;
+    padding: 10px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #E66E01;
+}
+
+.navbar-nav .nav-link.active {    
+    color: #E66E01;
+    font-size: 35px;
+    padding: 10px;
+    font-family: "Spectral", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nav-bar-button a {
