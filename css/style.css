@@ -110,7 +110,7 @@ nav {
     text-align: center;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     header { 
         flex-direction: row;
         height: 200px;
@@ -160,7 +160,7 @@ footer p {
     font-size: 18px;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     footer p {
         font-size: 55px;
     }
@@ -209,7 +209,7 @@ footer p {
     color: #F2E7BB;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     .atraccion {
         display: flex;
         flex-direction: row;
@@ -253,7 +253,7 @@ footer p {
     align-self: center;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     .nosotros-img {
         width: 40%;
     }
@@ -283,7 +283,7 @@ footer p {
     align-self: center;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     .video-recurso {
         display: grid;
         grid-template-columns: 500px auto;
@@ -294,9 +294,6 @@ footer p {
         margin-top: 0px;
     }
 }
-
-
-
 
 /*CSS de Contacto*/
 
@@ -373,7 +370,7 @@ footer p {
     align-self: flex-end;
 }
 
-@media (min-width:800px) {
+@media (min-width:768px) {
     .contacto-page {
         display: grid;
         grid-template-columns: 50% 50%;
