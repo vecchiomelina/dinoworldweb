@@ -191,13 +191,20 @@ footer p {
   }
 }
 /*Estilo de index/home*/
-.principal {
+.principal-page {
   display: flex;
+}
+.principal-page img {
   width: 100%;
   height: auto;
 }
 
 /*Estilo de atracciones*/
+.atracciones-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .atraccion {
   display: flex;
   flex-direction: column;
@@ -252,6 +259,19 @@ footer p {
   }
 }
 /*Estilo de nosotros*/
+.nosotros-page {
+  display: flex;
+  flex-direction: column;
+}
+.nosotros-page p {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: justify;
+  align-self: center;
+}
+
 .nosotros-img {
   width: 80%;
   height: auto;
@@ -261,25 +281,18 @@ footer p {
   margin-right: auto;
 }
 
-.nosotros-p {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  display: flex;
-  text-align: justify;
-  align-self: center;
-}
-
 @media (min-width: 768px) {
   .nosotros-img {
     width: 40%;
   }
 }
 /*Estilo de recursos*/
-.video-recurso {
+.recursos-page {
   display: flex;
   flex-direction: column;
+}
+
+.video-recurso {
   margin-bottom: 35px;
   padding-left: 15px;
   padding-right: 15px;

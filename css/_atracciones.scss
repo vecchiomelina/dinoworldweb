@@ -2,6 +2,11 @@
 
 /*Estilo de atracciones*/
 
+.atracciones-page {
+    display: flex;
+    flex-direction: column;
+}
+
 .atraccion {
     display: flex;
     flex-direction: column;
