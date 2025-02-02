@@ -3,6 +3,7 @@ $font-family-encode-sans-condensed: "Encode Sans Condensed", serif;
 $font-family-linden-hill: "Linden Hill", serif;
 $font-family-jungle-fever: "JungleFever";
 $font-family-rubik-distressed: "Rubik Distressed", serif;
+$alineaciones-de-texto: center, left, right, justify;
 
 @mixin texto-con-estilo($family, $style, $size, $color) {
     font-family: $family;
@@ -14,4 +15,10 @@ $font-family-rubik-distressed: "Rubik Distressed", serif;
 @mixin texto-con-estilo-y-peso($family, $style, $size, $color, $weigh) {
     @include texto-con-estilo($family, $style, $size, $color);
     font-weight: $weigh;
+}
+
+@each $alineacion in $alineaciones-de-texto {
+    .text-aligned-#{$alineacion} {
+        text-align: $alineacion;
+    }
 }

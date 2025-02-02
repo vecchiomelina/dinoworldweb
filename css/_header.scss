@@ -28,11 +28,11 @@ nav {
 
 .navbar-nav {
     --bs-nav-link-hover-color: #{$color-menu-actual};
-}
 
-.navbar-nav .nav-link.active {
-    @extend .nav-link;    
-    color: $color-menu-actual;
+    .nav-link.active {
+        @extend .nav-link;    
+        color: $color-menu-actual;
+    }
 }
 
 .nav-bar-button {
@@ -44,22 +44,21 @@ nav {
     width: 400px;
     justify-items: center;
     align-self: center;
-}
 
-.logo img {
-    width: 140px;
-    height: 112px;
-    transition: transform 1s ease;
-}
+    h1 {
+        color: $color-principal;
+        font-family: $font-family-jungle-fever;
+    }
 
-.logo img:hover {
-    transform: scale(1.1, 1.1);
-}
+    img {
+        width: 140px;
+        height: 112px;
+        transition: transform 1s ease;
+    }
 
-.logo h1 {
-    color: $color-principal;
-    font-family: $font-family-jungle-fever;
-    text-align: center;
+    img:hover {
+        transform: scale(1.1, 1.1);
+    }
 }
 
 @media (min-width:768px) {

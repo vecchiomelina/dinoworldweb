@@ -1,3 +1,19 @@
+.text-aligned-center {
+  text-align: center;
+}
+
+.text-aligned-left {
+  text-align: left;
+}
+
+.text-aligned-right {
+  text-align: right;
+}
+
+.text-aligned-justify {
+  text-align: justify;
+}
+
 /*Estilo general*/
 * {
   margin: 0;
@@ -35,6 +51,22 @@ p {
   font-weight: 100;
 }
 
+.text-aligned-center {
+  text-align: center;
+}
+
+.text-aligned-left {
+  text-align: left;
+}
+
+.text-aligned-right {
+  text-align: right;
+}
+
+.text-aligned-justify {
+  text-align: justify;
+}
+
 /*Estilo de header*/
 header {
   background-color: black;
@@ -66,7 +98,6 @@ nav {
 .navbar-nav {
   --bs-nav-link-hover-color: #E66E01;
 }
-
 .navbar-nav .nav-link.active {
   color: #E66E01;
 }
@@ -81,21 +112,17 @@ nav {
   justify-items: center;
   align-self: center;
 }
-
+.logo h1 {
+  color: #E6B501;
+  font-family: "JungleFever";
+}
 .logo img {
   width: 140px;
   height: 112px;
   transition: transform 1s ease;
 }
-
 .logo img:hover {
   transform: scale(1.1, 1.1);
-}
-
-.logo h1 {
-  color: #E6B501;
-  font-family: "JungleFever";
-  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -116,24 +143,33 @@ nav {
     display: inline-block;
   }
 }
+.text-aligned-center {
+  text-align: center;
+}
+
+.text-aligned-left {
+  text-align: left;
+}
+
+.text-aligned-right {
+  text-align: right;
+}
+
+.text-aligned-justify {
+  text-align: justify;
+}
+
 /*Estilo de Footer*/
 footer {
   background-color: #E66E01;
   padding-top: 10px;
   display: flex;
 }
-
 footer .icon {
   margin-top: 10px;
   width: 32px;
   height: 32px;
 }
-
-.footer-icon {
-  display: flex;
-  padding-left: 10px;
-}
-
 footer p {
   font-family: "Rubik Distressed", serif;
   font-style: normal;
@@ -142,6 +178,11 @@ footer p {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-icon {
+  display: flex;
+  padding-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -281,14 +322,12 @@ footer p {
   flex-direction: column;
   width: 100%;
 }
-
 .info-contacto img {
   width: 20px;
   height: 20px;
   margin-top: 10px;
   margin-right: 10px;
 }
-
 .info-contacto span {
   color: white;
 }
@@ -300,7 +339,6 @@ footer p {
   width: auto;
   margin-top: 20px;
 }
-
 .form-contacto input {
   border-color: transparent;
 }
@@ -310,7 +348,6 @@ footer p {
   flex-direction: row;
   gap: 10px;
 }
-
 .contacto-info-personal input {
   width: 50%;
 }
