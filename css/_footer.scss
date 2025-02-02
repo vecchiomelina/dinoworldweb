@@ -1,0 +1,34 @@
+@import 'colores';
+@import 'textos';
+
+/*Estilo de Footer*/
+
+footer {
+    background-color: $color-fondo-footer;
+    padding-top: 10px;
+    display: flex;
+}
+
+footer .icon {
+    margin-top: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-icon {
+    display: flex;
+    padding-left: 10px;
+}
+
+footer p {
+    @include texto-con-estilo($font-family-rubik-distressed, normal, 18px, $color-textos);
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    footer p {
+        font-size: 55px;
+    }
+}

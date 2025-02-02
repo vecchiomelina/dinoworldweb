@@ -1,0 +1,17 @@
+$font-family-spectral: "Spectral", serif;
+$font-family-encode-sans-condensed: "Encode Sans Condensed", serif;
+$font-family-linden-hill: "Linden Hill", serif;
+$font-family-jungle-fever: "JungleFever";
+$font-family-rubik-distressed: "Rubik Distressed", serif;
+
+@mixin texto-con-estilo($family, $style, $size, $color) {
+    font-family: $family;
+    font-style: $style;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin texto-con-estilo-y-peso($family, $style, $size, $color, $weigh) {
+    @include texto-con-estilo($family, $style, $size, $color);
+    font-weight: $weigh;
+}

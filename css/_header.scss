@@ -1,0 +1,84 @@
+@import 'colores';
+@import 'textos';
+
+/*Estilo de header*/
+
+header { 
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+}
+
+nav { 
+    text-align: center;
+    align-self: center;   
+}
+
+.navbar {
+    background-color: $color-fondo;
+}
+
+.navbar-toggler {
+    background-color: $color-principal;
+}
+
+.nav-link {
+    @include texto-con-estilo-y-peso($font-family-spectral, normal, 35px, $color-principal, 400);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #{$color-menu-actual};
+}
+
+.navbar-nav .nav-link.active {
+    @extend .nav-link;    
+    color: $color-menu-actual;
+}
+
+.nav-bar-button {
+    display: block;
+}
+
+.logo {
+    display: block;
+    width: 400px;
+    justify-items: center;
+    align-self: center;
+}
+
+.logo img {
+    width: 140px;
+    height: 112px;
+    transition: transform 1s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.logo h1 {
+    color: $color-principal;
+    font-family: $font-family-jungle-fever;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    header { 
+        flex-direction: row;
+        height: 200px;
+        background-color: $color-fondo;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        overflow: hidden;
+        width: 100%;
+        text-align: end;
+        align-self: flex-end;
+    }
+
+    .nav-bar-button {
+        display: inline-block;
+    }
+}

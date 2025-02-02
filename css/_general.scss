@@ -1,0 +1,32 @@
+@import 'colores';
+@import 'textos';
+
+/*Estilo general*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 20px;
+    width: 100%;
+}
+
+body {
+    background-color: $color-fondo;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    @include texto-con-estilo-y-peso($font-family-linden-hill, normal, 30px, $color-principal, 400);
+}
+
+p {
+    @include texto-con-estilo-y-peso($font-family-encode-sans-condensed, normal, 20px, $color-textos, 100);
+}

@@ -1,0 +1,25 @@
+/*Estilo de nosotros*/
+.nosotros-img {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nosotros-p {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    text-align: justify;
+    align-self: center;
+}
+
+@media (min-width:768px) {
+    .nosotros-img {
+        width: 40%;
+    }
+}

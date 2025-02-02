@@ -1,0 +1,60 @@
+@import 'colores';
+
+/*Estilo de atracciones*/
+
+.atraccion {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.atraccion-texto {
+    display: inline-block;
+    text-align: justify;
+    align-self: center;
+    margin-left: 30px;
+    margin-right: 30px;    
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.atracciones-img {
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
+
+.atracciones-titulo {
+    font-size: 30px;
+    color: $color-principal;
+    text-align: center;
+}
+
+.atracciones-p {
+    font-size: 20px;
+    color: $color-textos;
+}
+
+@media (min-width:768px) {
+    .atraccion {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .atracciones-img {
+        width: 40%;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .atraccion-texto {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .atracciones-titulo {
+        color: $color-principal;
+        text-align: left;
+    }
+}
