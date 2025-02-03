@@ -70,13 +70,24 @@
 
           <form class="form-contacto" action="/submit" method="post">
             <div class="contacto-info-personal">
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-              <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre">
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido">
             </div>
-                          
-            <input type="tel" class="contacto-tel" name="telefono" id="telefono" placeholder="Telefono" >
-            <input type="email" class="contacto-mail" name="mail" id="mail" placeholder="Mail" >
-            <textarea class="contacto-mensaje" name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+            
+            <div class="contacto-data-container">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" class="contacto-tel" name="telefono" id="telefono">
+            </div>
+
+            <div class="contacto-data-container">
+              <label for="mail">Mail</label>
+              <input type="email" class="contacto-mail" name="mail" id="mail" >
+            </div>
+
+            <label for="mensaje">Dejanos tu mensaje</label>
+            <textarea class="contacto-mensaje" name="mensaje" id="mensaje"></textarea>
             <input type="submit" class="contacto-enviar" value="Enviar">
           </form>
         </div>

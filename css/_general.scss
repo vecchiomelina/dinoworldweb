@@ -36,3 +36,7 @@ h2 {
 p {
     @include texto-con-estilo-y-peso($font-family-encode-sans-condensed, normal, 20px, $color-textos, 100);
 }
+
+label {
+    color: $color-textos;
+}

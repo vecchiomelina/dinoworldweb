@@ -58,20 +58,29 @@
     }
 }
 
-.contacto-tel {
-    width: auto;
+.contacto-data-input {
+    width: 100%;
     padding-left: 25px;
-    background: url("../img/telefono.png") no-repeat left;
-    background-size: 10px;
-    background-color: $color-fondo-forms;
 }
 
-.contacto-mail {
-    width: auto;
-    padding-left: 25px;
-    background: url("../img/email.png") no-repeat left;
-    background-size: 15px;
-    background-color: $color-fondo-forms;
+.contacto-data-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .contacto-tel {
+        @extend .contacto-data-input;
+        background: url("../img/telefono.png") no-repeat left;
+        background-size: 10px;
+        background-color: $color-fondo-forms;
+    }
+
+    .contacto-mail {
+        @extend .contacto-data-input;
+        background: url("../img/email.png") no-repeat left;
+        background-size: 15px;
+        background-color: $color-fondo-forms;
+    }
 }
 
 .contacto-mensaje {

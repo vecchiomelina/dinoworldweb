@@ -57,6 +57,10 @@ p {
   font-weight: 100;
 }
 
+label {
+  color: #F2E7BB;
+}
+
 .text-aligned-center {
   text-align: center;
 }
@@ -385,17 +389,22 @@ footer p {
   width: 50%;
 }
 
-.contacto-tel {
-  width: auto;
+.contacto-data-input, .contacto-data-container .contacto-mail, .contacto-data-container .contacto-tel {
+  width: 100%;
   padding-left: 25px;
+}
+
+.contacto-data-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.contacto-data-container .contacto-tel {
   background: url("../img/telefono.png") no-repeat left;
   background-size: 10px;
   background-color: white;
 }
-
-.contacto-mail {
-  width: auto;
-  padding-left: 25px;
+.contacto-data-container .contacto-mail {
   background: url("../img/email.png") no-repeat left;
   background-size: 15px;
   background-color: white;
