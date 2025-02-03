@@ -23,6 +23,12 @@ body {
     padding: 0;
 }
 
+h1 {
+    color: $color-principal;
+    font-family: $font-family-jungle-fever;
+    font-style: bold;
+}
+
 h2 {
     @include texto-con-estilo-y-peso($font-family-linden-hill, normal, 30px, $color-principal, 400);
 }

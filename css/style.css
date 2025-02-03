@@ -35,6 +35,12 @@ body {
   padding: 0;
 }
 
+h1 {
+  color: #E6B501;
+  font-family: "JungleFever";
+  font-style: bold;
+}
+
 h2 {
   font-family: "Linden Hill", serif;
   font-style: normal;
@@ -111,10 +117,6 @@ nav {
   width: 400px;
   justify-items: center;
   align-self: center;
-}
-.logo h1 {
-  color: #E6B501;
-  font-family: "JungleFever";
 }
 .logo img {
   width: 140px;
@@ -193,6 +195,7 @@ footer p {
 /*Estilo de index/home*/
 .principal-page {
   display: flex;
+  flex-direction: column;
 }
 .principal-page img {
   width: 100%;
@@ -203,6 +206,9 @@ footer p {
 .atracciones-page {
   display: flex;
   flex-direction: column;
+}
+.atracciones-page h1 {
+  margin-bottom: 15px;
 }
 
 .atraccion {
@@ -263,6 +269,9 @@ footer p {
   display: flex;
   flex-direction: column;
 }
+.nosotros-page h1 {
+  margin-bottom: 15px;
+}
 .nosotros-page p {
   margin-left: 50px;
   margin-right: 50px;
@@ -290,6 +299,9 @@ footer p {
 .recursos-page {
   display: flex;
   flex-direction: column;
+}
+.recursos-page h1 {
+  margin-bottom: 15px;
 }
 
 .video-recurso {
@@ -323,6 +335,14 @@ footer p {
 }
 /*Estilo de Contacto*/
 .contacto-page {
+  display: flex;
+  flex-direction: column;
+}
+.contacto-page h1 {
+  margin-bottom: 15px;
+}
+
+.contacto {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
@@ -392,7 +412,7 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  .contacto-page {
+  .contacto {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 15px;

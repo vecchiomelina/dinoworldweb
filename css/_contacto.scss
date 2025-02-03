@@ -5,6 +5,15 @@
 .contacto-page {
     display: flex;
     flex-direction: column;
+
+    h1 {
+        margin-bottom: 15px;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;    
     margin-bottom: 20px;
@@ -76,7 +85,7 @@
 }
 
 @media (min-width:768px) {
-    .contacto-page {
+    .contacto {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 15px;
